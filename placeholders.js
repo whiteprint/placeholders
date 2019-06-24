@@ -6,8 +6,17 @@ var i;
 for (i = 0; i < p.length; i++) {
   if (p[i].nodeName == "IMG") {
     // if its on an img
+    // check for aspect ratio
+    var r = p[i].getAttribute("data-ratio");
     // replace with transparent pixel
-    p[i].src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
+    if (r == "3:2") {
+      p[i].src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=";
+    } else if (r == "2:3") {
+      p[i].src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAADCAQAAAAT4xYKAAAADklEQVR42mNkAAJGOAEAAC0ABNxMS2YAAAAASUVORK5CYII=";
+    } else {
+      // 1x1
+      p[i].src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
+    }
     // replace alt text
     p[i].alt="Placeholder image."
   } else {
