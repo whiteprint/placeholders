@@ -1,0 +1,19 @@
+{
+  "name": "@whiteprint/placeholders",
+  "version": "0.1.0",
+  "description": "Placeholders for Whiteprint, front-end component library",
+  "main": "placeholders.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/whiteprint/placeholders.git"
+  },
+  "author": {
+    "name": "Sam Smith",
+    "url": "https://smth.uk"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whiteprint/placeholders/issues"
+  },
+  "homepage": "https://whiteprint.io/placeholders"
+}
