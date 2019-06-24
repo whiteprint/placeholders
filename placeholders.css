@@ -3,13 +3,7 @@ img.placeholder {
   background-size: 31.11px 31.11px;
 }
 
-h1.placeholder,
-h2.placeholder,
-h3.placeholder,
-h4.placeholder,
-h5.placeholder,
-h6.placeholder,
-p.placeholder {
+*:not(img).placeholder {
   word-break: break-all;
   letter-spacing: -0.5em;
   overflow: hidden;
