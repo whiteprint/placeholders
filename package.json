@@ -1,7 +1,7 @@
 {
   "name": "@whiteprint/placeholders",
-  "version": "0.1.0",
-  "description": "Placeholders for Whiteprint, front-end component library",
+  "version": "0.1.1",
+  "description": "Placeholders for Whiteprint, CSS framework",
   "main": "placeholders.js",
   "repository": {
     "type": "git",
